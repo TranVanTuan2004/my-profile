@@ -10,8 +10,7 @@ export default function ContactForm({ id }) {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('deepajha14', 'template_lyzbf0p', form.current, '-8AsG2hlNcWfgWJFj')
+    emailjs.sendForm('service_yckdm8h', 'template_hgpbklw', form.current, 'SoW4qy8rgIzltt0ua')
       .then((result) => {
         console.log(result.text);
         toast.success('Message sent successfully.', {
